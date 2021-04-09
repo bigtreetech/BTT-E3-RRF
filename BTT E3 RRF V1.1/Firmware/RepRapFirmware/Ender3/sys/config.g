@@ -77,3 +77,5 @@ M575 P1 S2 B57600
 
 M552 S1                                        ; enable network
 M150 X2
+
+T0 P0
