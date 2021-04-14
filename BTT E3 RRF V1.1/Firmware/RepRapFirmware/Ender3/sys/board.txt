@@ -9,11 +9,11 @@
 //    : Comments can be defined with // or # (comments are not supported inside arrays)
 //    : Each config entry must be all on a single line.
 
-lpc.board = biquskr_rrf_e3_1.0; 
+lpc.board = biquskr_rrf_e3_1.1; 
 
 //LED blinks to indicate Platform is spinning or other diagnostic 
 //Comment out or set to NoPin if not wanted.
-leds.diagnostic = NoPin; 
+leds.diagnostic = E.2;
 
 //Internal SDCard SPI Frequency.
 lpc.internalSDCard.spiFrequencyHz  = 25000000;
@@ -46,4 +46,13 @@ serial.aux.rxTxPins = {PA_10, PA_9};
 atx.powerPin = E.1;
 atx.powerPinInverted = false
 led.neopixelPin = B.7;
-leds.diagnostic = E.2;
+
+// 12864 display settings
+lcd.encoderPinA=B.2;
+lcd.encoderPinB=E.7;
+lcd.encoderPinSw=E.9;
+lcd.lcdCSPin=B.1;
+lcd.spiChannel=4;
+SPI4.pins={E.10, NoPin, E.11};
+lcd.lcdBeepPin = E.8;
+
