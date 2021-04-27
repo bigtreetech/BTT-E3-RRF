@@ -9,3 +9,4 @@ G1 Z5 F360     ; lift Z by 5mm
 G90            ; absolute positioning
 G1 X0 Y0 F6000 ; go to X=0 Y=0
 
+M118 P2 S"//action::paused"
